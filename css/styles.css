@@ -17,12 +17,14 @@ body {
   font-family: Roboto, sans-serif;
 }
 li {
-  display: inline-block;
+  list-style-type: none;
+  /* display: inline-block; */
 }
 /* li {
   display: block;
 } */
 .nav-logo {
+  color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -30,10 +32,13 @@ li {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.nav-logo:hover,
+.logo-secondary {
+  color: var(--title-text-color);
+}
+/* .nav-logo:hover,
 .nav-logo:focus {
   color: var(--accent-color);
-}
+} */
 .nav-link {
   color: var(--title-text-color);
   font-family: Roboto;
@@ -132,9 +137,6 @@ li {
 .footer-section {
   background: #2f303a;
 }
-.footer-title {
-  display: none;
-}
 .footer-logo {
   color: var(--accent-color);
   font-family: Raleway;
@@ -144,10 +146,13 @@ li {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.footer-logo:hover,
+.footer-logo-secondary {
+  color: var(--primary-white-color);
+}
+/* .footer-logo:hover,
 .footer-logo:focus {
   color: var(--accent-color);
-}
+} */
 .address-text {
   color: var(--primary-white-color);
   font-family: Roboto;
@@ -173,7 +178,8 @@ li {
 }
 .footer-title,
 .portfolio-title {
-  display: none;
+  opacity: 0;
+  /* display: none; */
 }
 .filter-button {
   color: var(--title-text-color);
